@@ -63,6 +63,10 @@ python main.py --maxdisp 192 \
                --loadmodel (optional)\
                --savemodel (path for saving model)
 ```
+Sample:
+
+python main.py --maxdisp 192 --model stackhourglass --datapath ../../Downloads/data_scene_flow/training/ --epochs 1 --savemodel .
+
 
 As another example, use the following command to finetune a PSMNet on KITTI 2015
 
@@ -101,6 +105,10 @@ Update: 2018/9/6 We released the pre-trained KITTI 2012 model.
 ```
 python Test_img.py --loadmodel (finetuned PSMNet) --leftimg ./left.png --rightimg ./right.png --isgray False
 ```
+Sample:
+
+python Test_img.py --loadmodel pretrained_model_KITTI2015.tar --leftimg ../../Downloads/data_scene_flow/testing/image_2/ --rightimg ../../Downloads/data_scene_flow/testing/image_3/ --isgray False
+
 
 ## Results
 
