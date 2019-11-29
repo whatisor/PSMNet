@@ -13,8 +13,8 @@ import torch.nn.functional as F
 import numpy as np
 import time
 import math
-from dataloader import listflowfile as lt
-from dataloader import SecenFlowLoader as DA
+from dataloader import KITTIloader2015 as lt
+from dataloader import KITTILoader as DA
 from models import *
 
 parser = argparse.ArgumentParser(description='PSMNet')
